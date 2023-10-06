@@ -1,7 +1,6 @@
 // Import stylesheets
 import './style.css';
 
-//Решение с циклом
 function sumTo(n) {
   let sum = 0;
   for (let i = 1; i <= n; n++) {
@@ -12,7 +11,6 @@ function sumTo(n) {
 
 console.log('1. Вычислить сумму чисел до данного: ', sumTo(100));
 
-//Решение через рекурсию
 function sumTo(n) {
   if (n == 1) return 1;
   return n + sumTo(n - 1);
@@ -20,14 +18,12 @@ function sumTo(n) {
 
 console.log('2. Вычислить сумму чисел до данного: ', sumTo(100));
 
-//Решение с использованием формулы
 function sumTo(n) {
   return (n * (n + 1)) / 2;
 }
 
 console.log('3. Вычислить сумму чисел до данного: ', sumTo(100));
 
-//..................................
 
 function factorial(n) {
   return n != 1 ? n * factorial(n - 1) : 1;
@@ -35,7 +31,6 @@ function factorial(n) {
 
 console.log('4. Вычислить факториал: ', factorial(5));
 
-//...................................
 function fib(n) {
   let a = 1;
   let b = 1;
@@ -51,7 +46,6 @@ console.log('5. Числа фибоначи: ', fib(3));
 console.log('6. Числа фибоначи: ', fib(7));
 console.log('7. Числа фибоначи: ', fib(77));
 
-//...................................
 let list = {
   value: 1,
   next: {
@@ -77,7 +71,6 @@ function printList(list) {
 
 printList(list);
 
-//....................................
 let rlist = {
   value: 1,
   next: {
